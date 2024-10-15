@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Food Delivery Service</h1>
+    </header>
+    
+    <!-- Menu Table -->
+    <section>
+        <h2>Today's Specials</h2>
+        <table>
+            <caption>Food Delivery Menu</caption>
+            <thead>
+                <tr>
+                    <th>Dish Photo</th>
+                    <th>Dish Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="https://www.cookinwithmima.com/wp-content/uploads/2021/06/Grilled-BBQ-Chicken.jpg" alt="Grilled Chicken" class="dish-photo"></td>
+                    <td>Grilled Chicken</td>
+                    <td>Tender grilled chicken served with fresh herbs</td>
+                    <td>$12.00</td>
+                </tr>
+                <tr>
+                    <td><img src="https://gratefulgrazer.com/wp-content/uploads/2021/04/Vegan-Pasta-Primavera-13.jpg" alt="Vegan Pasta" class="dish-photo"></td>
+                    <td>Vegan Pasta</td>
+                    <td>A mix of seasonal vegetables with homemade pasta</td>
+                    <td>$14.00</td>
+                </tr>
+                <tr>
+                    <td><img src="https://www.oursweetadventures.com/wp-content/uploads/2020/03/Seafood-Risotto-3-720x720.jpg" alt="Seafood Risotto" class="dish-photo"></td>
+                    <td>Seafood Risotto</td>
+                    <td>Creamy risotto with shrimp and scallops</td>
+                    <td>$18.00</td>
+                </tr>
+                <tr>
+                    <td><img src="https://sallysbakingaddiction.com/wp-content/uploads/2017/02/lava-cake.jpg" alt="Chocolate Lava Cake" class="dish-photo"></td>
+                    <td>Chocolate Lava Cake</td>
+                    <td>Warm chocolate cake with a gooey center</td>
+                    <td>$7.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Order Form -->
+    <section>
+        <h2>Place Your Order</h2>
+        <form action="#" method="POST" id="orderForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="foodItems">Select Your Food:</label>
+            <select id="foodItems" name="foodItems" required>
+                <option value="Grilled Chicken">Grilled Chicken</option>
+                <option value="Vegan Pasta">Vegan Pasta</option>
+                <option value="Seafood Risotto">Seafood Risotto</option>
+                <option value="Chocolate Lava Cake">Chocolate Lava Cake</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
